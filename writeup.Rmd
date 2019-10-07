@@ -1,5 +1,5 @@
 ---
-title: "Reproduction of Study Schonberg et al., 2012 by OpenNeuro (2012, Frontiers in Neuroscience)"
+title: "Reproduction of Schonberg et al., 2012 by OpenNeuro (2012, Frontiers in Neuroscience)"
 author: "Leili Mortazavi _(leilimor@stanford.edu)_"
 date: "`r format(Sys.time(), '%B %d, %Y')`"
 output:
@@ -12,17 +12,17 @@ output:
 
 <!-- Replication reports should all use this template to standardize reporting across projects.  These reports will be public supplementary materials that accompany the summary report(s) of the aggregate results. -->
 
-#Introduction
+##Introduction
 ###Justification for choice of experiment:
-This paper investigates correlates of neural activity during a risk-taking decision-making task using fMRI. The research question in this study is very relevant to my research interest, which is understanding the neurobiological basis of risk-based decision making, such as gambling and drug taking. Furthermore, I will also be using task-based fMRI for my PhD work but I do not have experience with. Due to practical limitations, I am not able to collect new fMRI data to replicate papers that are so relevant to my work. Therefore, I am using raw data from OpenNeuro database to reproduce the results found in this paper. I believe, this experience will be very useful in terms of learning the workflow, organization, labeling, analyzing, and the reproducibility issues of working with task-related fMRI data.
+This paper investigates correlates of neural activity during a risk-taking decision-making task using fMRI. The methodology and the research question in this study are very relevant to the research that will comprise most of my PhD work, which is understanding the neurobiological basis of risk-based decision making, such as gambling and drug taking. Due to practical limitations, I am not able to collect new fMRI data to replicate papers that are so relevant to my work. Therefore, I am using the raw fMRI data from this study, which are publically available on OpenNeuro database, to reproduce the results found in this paper. I believe, this experience will be very useful in terms of learning the workflow, organization, labeling, analyzing, and the reproducibility issues of working with task-based fMRI data.
 
 ###Description of paper:
-The purpose of this study was to examine neural correlates of naturalistic risk-based decision making. Participants were scanned while performing a sequential risk-taking task, called the Balloon Analog Risk Task (BART). In this task, participants choose to either pump a balloon for more rewards, at the risk of it exploding and losing the reward, or to not pump and cashout. 
+The purpose of this study was to examine neural correlates of naturalistic risk-based decision making. Participants were scanned while performing a sequential risk-taking task, called the Balloon Analog Risk Task (BART). In this task, participants choose to either pump a balloon for more rewards at the risk of it exploding, which would lead to losing the reward, or not pump and cashout as a safe option. 
 
 Schonberg et al. (2012) found that when participants chose to further inflate the balloons, activity of several brain regions previously implicated in risk taking (anterior insula, anterior cingulate cortex, and right dorsolateral prefrontal cortex) was increased, whereas activity of a region linked to value calculation (ventromedial prefrontal cortex) was decreased. 
 
 ###Description of the procedures required to reproduce the results:
-I will download the raw imaging data from OpenNeuro. After image preprocessing and registration using FSL software, I'll analyze the fMRI data for three different task-related events:
+I will download the raw imaging data from OpenNeuro. After image preprocessing and registration using FSL software, I will analyze the fMRI data for three different task-related events:
 
 (1) pumps
 
@@ -41,7 +41,7 @@ As per the original study, I will be using a general linear model approach with 
 Since reaction time does not apply to explosion events, explosions will only use the first two regressors.
 
 ###Anticipated challenges:
-Since I have not worked with fMRI data before, I anticipate some challenges during image preprocessing and registration. 
+I anticipate some challenges during image preprocessing and registration using FSL because I have not used this software before and would need to familiarize myself with the procedures.  
 
 ###Links
 Project repository: https://github.com/leilimor/mortazavi2019
@@ -54,43 +54,43 @@ OpenNeuro databse: https://openneuro.org/datasets/ds000001/versions/00006
 Schonberg, T., Fox, C. R., Mumford, J. A., Congdon, E., Trepel, C., & Poldrack, R. A. (2012). Decreasing ventromedial prefrontal cortex activity during sequential risk-taking: an fMRI investigation of the balloon analog risk task. _Front. Neurosci. 6_(80). doi: 10.3389/fnins.2012.00080
 
 
-#Methods
+##Methods
 
 ###Power Analysis
 
-Original effect size, power analysis for samples to achieve 80%, 90%, 95% power to detect that effect size.  Considerations of feasibility for selecting planned sample size.
+<!--Original effect size, power analysis for samples to achieve 80%, 90%, 95% power to detect that effect size.  Considerations of feasibility for selecting planned sample size.-->
 
 ###Planned Sample
 
-Planned sample size and/or termination rule, sampling frame, known demographics if any, preselection rules if any.
+<!--Planned sample size and/or termination rule, sampling frame, known demographics if any, preselection rules if any.-->
 
 ###Materials
 
-All materials - can quote directly from original article - just put the text in quotations and note that this was followed precisely.  Or, quote directly and just point out exceptions to what was described in the original article.
+<!--All materials - can quote directly from original article - just put the text in quotations and note that this was followed precisely.  Or, quote directly and just point out exceptions to what was described in the original article.--> 
 
 ###Procedure	
 
-Can quote directly from original article - just put the text in quotations and note that this was followed precisely.  Or, quote directly and just point out exceptions to what was described in the original article.
+<!--Can quote directly from original article - just put the text in quotations and note that this was followed precisely.  Or, quote directly and just point out exceptions to what was described in the original article.--> 
 
 ###Analysis Plan
 
-Can also quote directly, though it is less often spelled out effectively for an analysis strategy section.  The key is to report an analysis strategy that is as close to the original - data cleaning rules, data exclusion rules, covariates, etc. - as possible.  
+<!--Can also quote directly, though it is less often spelled out effectively for an analysis strategy section.  The key is to report an analysis strategy that is as close to the original - data cleaning rules, data exclusion rules, covariates, etc. - as possible.  
 
-**Clarify key analysis of interest here**  You can also pre-specify additional analyses you plan to do.
+**Clarify key analysis of interest here**  You can also pre-specify additional analyses you plan to do.--> 
 
 ###Differences from Original Study
 
-Explicitly describe known differences in sample, setting, procedure, and analysis plan from original study.  The goal, of course, is to minimize those differences, but differences will inevitably occur.  Also, note whether such differences are anticipated to make a difference based on claims in the original article or subsequent published research on the conditions for obtaining the effect.
+<!--Explicitly describe known differences in sample, setting, procedure, and analysis plan from original study.  The goal, of course, is to minimize those differences, but differences will inevitably occur.  Also, note whether such differences are anticipated to make a difference based on claims in the original article or subsequent published research on the conditions for obtaining the effect.--> 
 
 ### Methods Addendum (Post Data Collection)
 
-You can comment this section out prior to final report with data collection.
+<!--You can comment this section out prior to final report with data collection.-->
 
 #### Actual Sample
-  Sample size, demographics, data exclusions based on rules spelled out in analysis plan
+  <!--Sample size, demographics, data exclusions based on rules spelled out in analysis plan-->
 
 #### Differences from pre-data collection methods plan
-  Any differences from what was described as the original plan, or “none”.
+ <!-- Any differences from what was described as the original plan, or “none”.-->
 
 
 ##Results
@@ -98,7 +98,7 @@ You can comment this section out prior to final report with data collection.
 
 ### Data preparation
 
-Data preparation following the analysis plan.
+<!--Data preparation following the analysis plan.-->
 	
 ```{r include=F}
 ###Data Preparation
@@ -114,20 +114,20 @@ Data preparation following the analysis plan.
 
 ### Confirmatory analysis
 
-The analyses as specified in the analysis plan.  
+<!--The analyses as specified in the analysis plan.  
 
-*Side-by-side graph with original graph is ideal here*
+*Side-by-side graph with original graph is ideal here*--> 
 
 ###Exploratory analyses
 
-Any follow-up analyses desired (not required).  
+<!--Any follow-up analyses desired (not required). -->  
 
 ## Discussion
 
 ### Summary of Replication Attempt
 
-Open the discussion section with a paragraph summarizing the primary result from the confirmatory analysis and the assessment of whether it replicated, partially replicated, or failed to replicate the original result.  
+<!--Open the discussion section with a paragraph summarizing the primary result from the confirmatory analysis and the assessment of whether it replicated, partially replicated, or failed to replicate the original result.  --> 
 
 ### Commentary
 
-Add open-ended commentary (if any) reflecting (a) insights from follow-up exploratory analysis, (b) assessment of the meaning of the replication (or not) - e.g., for a failure to replicate, are the differences between original and present study ones that definitely, plausibly, or are unlikely to have been moderators of the result, and (c) discussion of any objections or challenges raised by the current and original authors about the replication attempt.  None of these need to be long.
+<!--Add open-ended commentary (if any) reflecting (a) insights from follow-up exploratory analysis, (b) assessment of the meaning of the replication (or not) - e.g., for a failure to replicate, are the differences between original and present study ones that definitely, plausibly, or are unlikely to have been moderators of the result, and (c) discussion of any objections or challenges raised by the current and original authors about the replication attempt.  None of these need to be long.--> 

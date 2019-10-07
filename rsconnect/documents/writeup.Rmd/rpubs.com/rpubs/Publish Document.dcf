@@ -1,0 +1,10 @@
+name: Publish Document
+title:
+username:
+account: rpubs
+server: rpubs.com
+hostUrl: rpubs.com
+appId: https://api.rpubs.com/api/v1/document/535803/1f3e0470fc5e4877b597dadb0a7e67cc
+bundleId: https://api.rpubs.com/api/v1/document/535803/1f3e0470fc5e4877b597dadb0a7e67cc
+url: http://rpubs.com/leilimor/535803
+when: 1570419704.73294

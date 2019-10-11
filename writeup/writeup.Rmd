@@ -46,7 +46,7 @@ I anticipate some challenges during image preprocessing and registration using F
 ###Links
 Project repository: https://github.com/psych251/mortazavi2019
 
-Original paper: https://github.com/psych251/mortazavi2019/blob/master/original_paper.pdf 
+Original paper: https://github.com/psych251/mortazavi2019/tree/master/original_paper
 
 OpenNeuro databse: https://openneuro.org/datasets/ds000001/versions/00006
 

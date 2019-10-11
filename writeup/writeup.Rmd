@@ -44,9 +44,9 @@ Since reaction time does not apply to explosion events, explosions will only use
 I anticipate some challenges during image preprocessing and registration using FSL because I have not used this software before and would need to familiarize myself with the procedures.  
 
 ###Links
-Project repository: https://github.com/leilimor/mortazavi2019
+Project repository: https://github.com/psych251/mortazavi2019
 
-Original paper: https://github.com/leilimor/mortazavi2019/blob/master/original_paper.pdf 
+Original paper: https://github.com/psych251/mortazavi2019/blob/master/original_paper.pdf 
 
 OpenNeuro databse: https://openneuro.org/datasets/ds000001/versions/00006
 

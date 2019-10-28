@@ -1,0 +1,9 @@
+</pre><hr>Initialisation<br><pre>
+
+/usr/local/fsl/bin/fslmaths /Users/Leili/Desktop/replication-project/Raw-data-from-OpenNeuro_ds000001-00006/sub-01/func/sub-01_task-balloonanalogrisktask_run-03_bold prefiltered_func_data -odt float
+Total original volumes = 300
+Deleting 2 volume(s) - BE WARNED for future analysis!
+
+/usr/local/fsl/bin/fslroi prefiltered_func_data prefiltered_func_data 2 298
+
+/usr/local/fsl/bin/fslroi prefiltered_func_data example_func 149 1
